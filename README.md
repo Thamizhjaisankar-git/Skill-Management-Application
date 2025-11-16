@@ -67,9 +67,10 @@ Update application.properties:
 - Export to PDF / Excel
 - Dark Mode
 
+
+## 📬 Connect with Me
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/thamizhjaisankar)  
+- 🌐 [Portfolio](https://portfolio-fawn-beta-24.vercel.app/)  
+- ✉️ [Email Me](mailto:thamizhjaisankar@gmail.com)
   
-
-   
-
-
-
