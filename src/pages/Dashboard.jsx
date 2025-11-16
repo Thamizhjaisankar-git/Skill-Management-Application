@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Dashboard.css"; 
+import modal from "./Modal"
 
 function Dashboard() {
   const [skills, setSkills] = useState([]);
