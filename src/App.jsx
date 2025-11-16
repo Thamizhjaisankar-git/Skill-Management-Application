@@ -1,7 +1,7 @@
 import './App.css'
 import Dashboard from "./pages/Dashboard"
 import { Routes, Route } from "react-router-dom"
-import Modal from './pages/modal'
+import Modal from './pages/Modal'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 
