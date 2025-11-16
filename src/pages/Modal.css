@@ -1,0 +1,113 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+
+.modal-content {
+  background: #ffffff;
+  width: 420px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px -2px rgb(4, 108, 4);
+  animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+  from { 
+    transform: scale(0.9); 
+    opacity: 0; 
+}
+  to { 
+    transform: scale(1); 
+    opacity: 1; 
+}
+}
+
+.modal-content h2 { 
+    text-align: center; 
+    font-size: 22px; 
+    color: #333; 
+    margin-bottom: 20px; 
+    font-weight: 500;
+}
+
+form label { 
+    display: block; 
+    font-weight: 600; 
+    margin-bottom: 6px; 
+    color: #444; 
+    font-size: 14px; 
+}
+
+
+form input, form select {
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  outline: none; 
+  font-size: 14px; 
+  transition: 
+  border-color 0.2s;
+}
+
+
+form input:focus, form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.12);
+}
+
+/* error text */
+.error { 
+    color: #ef4444; 
+    font-size: 13px; 
+    margin-top: -8px; 
+    margin-bottom: 8px; 
+}
+
+/* Buttons */
+.modal-buttons { 
+    display:flex; 
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin-top: 8px; 
+}
+
+
+.modal-buttons button[type="submit"]{
+  background-color: #22c55e; 
+  color: white; 
+  font-weight: 600; 
+  border: none; 
+  border-radius: 8px; 
+  padding: 10px 22px; 
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(34,197,94,0.35);
+}
+
+.modal-buttons button[type="submit"]:hover { 
+    background-color: #16a34a; 
+}
+
+
+.close-btn { 
+    background-color: #969696; 
+    color:white; 
+    font-weight:600; 
+    border:none; 
+    border-radius:8px; 
+    padding:10px 22px; 
+    cursor:pointer; 
+}
+
+
+.close-btn:hover{ 
+    background-color:#636161; 
+}

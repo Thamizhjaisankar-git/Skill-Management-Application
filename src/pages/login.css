@@ -1,0 +1,23 @@
+.login-page{
+  overflow: hidden;
+  height: 100vh;
+  background: #d0d0d0;
+  padding-top: 50px;
+}
+
+.formcard-login {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 100px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.headlogin{
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+}
+

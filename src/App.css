@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+#root {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-main{
+  padding: 0 20px;
+  padding-bottom: 10px;
+}
+
+.app-subtitle {
+  text-align: center;
+  color: #707070;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+.table-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid rgb(238, 239, 239);
+  padding: 25px;
+}
+
+
+thead{
+  background-color: #fff;
+  box-shadow: 0 4px 4px -2px #058e55;
+}
+
+tbody>tr{
+  border-bottom: 2px solid rgb(238, 238, 238);
+}
+
+
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: #fff; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+
+th{
+  padding: 20px;
+  text-align: center; 
+  border-bottom: 1px solid #eee; 
+  font-size: 14px; 
+}
+
+
+td { 
+  padding: 15px 14px; 
+  text-align: center; 
+  border-bottom: 1px solid #eee; 
+  font-size: 14px; 
+}
+
+
+.action-btn { 
+  margin-right: 8px; 
+  padding: 6px 10px; 
+  border-radius: 6px; 
+  border:none; 
+  cursor:pointer; 
+}
+
+
+.action-btn.danger { 
+  background:#f65151; 
+  color:#fff; 
+  transition: transform 0.2s ease;
+}
+
+.action-btn.danger:hover { 
+  background:#d92121; 
+  transform: scale(1.05);
+}
+
+.action-btn.edit { 
+  background:#3091e1; 
+  color:#fff; 
+  transition: transform 0.2s ease;
+  margin-right: 15px;
+}
+
+.action-btn.edit:hover{
+  background:#0a5ea3; 
+  transform: scale(1.05);
+}
+
+
+.add-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.toggle-btn{
+  margin-left: 30px;
+  padding: 10px 16px;
+  background-color:white;
+  border: 1px solid #0db871;
+  color: #0db871;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: "0 1px 6px rgba(3, 121, 3, 0.4)";
+}
+
+
+.toggle-btn{
+  transition: transform 0.2s ease;
+}
+
+.toggle-btn:hover{
+  transform: scale(1.05);
+  background-color:white;
+  border: 1px solid #0db871;
+  color: #0db871;
+}
+
+.add-btn .btn { 
+  background:#0db871; 
+  color:white; 
+  padding:11px 30px; 
+  border-radius:8px; 
+  font-weight:700; 
+  text-decoration:none; 
+  box-shadow: 0 2px 6px rgba(3, 121, 3, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.add-btn .btn:hover { 
+  transform: scale(1.05);
+  background-color: #048b5c;
+  box-shadow: 0 4px 8px rgba(3, 121, 3, 0.4);
+}
+
+
+.add-btn{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 600;
+}
+
+
