@@ -1,8 +1,15 @@
 .login-page{
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  height: 100vh;
-  background: #d0d0d0;
-  padding-top: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2, #f64f5ae2); 
+  background-size: cover;  
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .formcard-login {
@@ -13,6 +20,7 @@
   width: 350px;
   margin: 100px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
 }
 
 .headlogin{

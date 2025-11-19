@@ -29,29 +29,45 @@ function Login() {
     return Object.keys(newErrors).length === 0;
   }
 
+  
   async function handleSubmit(e) {
     e.preventDefault();
 
     if (!validate()) 
       return;
 
-    const response = await fetch("http://localhost:8080/api/users/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(state)
-    });
+    try {
+      const response = await fetch("http://localhost:8080/api/users/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state),
+      });
 
-    const data = await response.text();
-    alert(data);
+      const data = await response.text();
 
-    if (response.ok) {
-      navigate("/dashboard"); 
+      if (data === "INVALID") {
+        alert("Invalid email or password"); 
+        return; 
+      }
+
+      if (data === "LOGIN_SUCCESS") {
+        alert("Login successful!");
+        navigate("/dashboard"); 
+      } 
+      else {
+        alert("Unexpected response: " + data); 
+      }
+    } 
+    catch (error) {
+      console.error(error);
+      alert("Something went wrong. Please try again.");
     }
   }
 
+
   return (
     <div className="login-page">
-      <div className="formcard">
+      <div className="formcard-login">
         <h1 className="headreg">Login</h1>
         <div id="span"></div>
 
@@ -72,7 +88,7 @@ function Login() {
         </form>
       </div>
        <p className="login-link"> Don't have an account?{" "}
-          <NavLink to="/"><span id="loginlink">Register</span></NavLink>
+          <NavLink to="/signup"><span id="loginlink">Register</span></NavLink>
         </p>
     </div>
   );

@@ -91,7 +91,8 @@ function Signup() {
           <button type="submit" className="btn">Sign Up</button>
         </form>
       </div>
-       <p className="login-link">Already have an account?{" "} 
+       
+        <p className="login-link">Already have an account?{" "} 
           <NavLink to="/login"><span id="loginlink">Login</span></NavLink>
         </p>
     </div>
